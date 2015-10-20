@@ -8,6 +8,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   font-family: 'Roboto', sans-serif;
+
 }
 .footer {
   position: absolute;
@@ -36,7 +37,12 @@ body {
   margin: 0 auto;
 }
 
-
+.navigation-wrap {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  border-radius: 0;
+  background: black;
+}
 
 .container .text-muted {
   margin: 20px 0;
@@ -44,4 +50,31 @@ body {
 
 .cl {
   clear: left;
+}
+
+.navigation-wrap-dropdown {
+  border-radius: 0;
+  background: #cdbfe3;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+.navigation-wrap-dropdown-2 {
+  border-radius: 0;
+  background: #5cb85c;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+li {
+  padding: 5px
+}
+
+.modal {
+  overflow: auto;
+  color: #333;
 }

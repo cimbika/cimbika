@@ -30,6 +30,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- Image Gallery -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
   </head>
 
   <body>
@@ -53,9 +57,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active" style="padding-right: 5px; padding-left: 5px;"><a href="#">Начало</a></li>
+              <li style="padding-right: 5px; padding-left: 5px;"><a href="index.html">Начало</a></li>
               <li style="padding-right: 5px; padding-left: 5px;" ><a href="#" id="show_div">Друга информация</a></li>
-              <li style="padding-right: 5px; padding-left: 5px;" ><a href="gallery.html">Галерия</a></li>
+              <li class="active" style="padding-right: 5px; padding-left: 5px;" ><a href="#">Галерия</a></li>
               
             </ul>
 
@@ -64,8 +68,9 @@
       </nav>
 
       <!-- DROP DOWN 1 --> 
-      <div class="navigation-wrap-dropdown media" id="hello">
-        
+      <div class="navigation-wrap-dropdown" id="hello">
+        <div>
+          <div class="media">
             <div class="media-body">
               <h4 class="media-heading">Повече информация</h4>
               Описание...............
@@ -107,23 +112,61 @@
 
           </div>
 
+        </div>  
+      </div>
 
       </div>
 
       <div class="page-header">
-
-      
-
-        <h1>Заглавие</h1>
-        <iframe src="https://player.vimeo.com/video/31711591?autoplay=1&color=ff9933&title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <h1>Галерия</h1>
       </div>
-      <p class="lead">Волфганг Амадеус Моцарт</p>
-      <p>Волфганг Амадеус Моцарт (на немски: Johann Chrysostom Wolfgang Amadeus Mozart, произношение на немски произношение на немски) [1] е плодовит и влиятелен австрийски композитор от класическата епоха.
-
-Неговото творчество е огромно по обем и обхваща всички музикални жанрове на класическата музика, съществуващи през неговото време — общо над 600 композиции[2], много от които се смятат за връх в симфоничната, концертната, камерната, клавирната, оперната и хоровата музика. Той е сред най-популярните класически композитори.
-
-Моцарт проявява забележителни способности от най-ранна възраст. Той притежава феноменален музикален слух, изключителна памет и блестящ изпълнителски, импровизаторски и композиторски дар. На основата на немския зингшпил и на италианската опера-буфа създава класическите опери „Отвличане от сарая“, „Сватбата на Фигаро“, „Дон Жуан“ и „Вълшебната флейта“. Автор е на 41 симфонии, 27 концерта за пиано и оркестър, 5 концерта за цигулка и оркестър, 9 концерта за духови инструменти и оркестър, камерна музика, клавирни творби, арии, серенади („Малка нощна музика“), „Реквием“ и други. Собственият му каталог се води от 9 февруари 1784 г., като до тогава вече е написал около 450 творби.</p>
+      <div id="links">
+        <a href="img/green_world_1.jpg" title="Banana" data-gallery>
+            <img src="img/thumbnails/green_world_1.jpg" alt="Banana">
+        </a>
+        <a href="img/green_world_2.jpg" title="Apple" data-gallery>
+            <img src="img/thumbnails/green_world_2.jpg" alt="Apple">
+        </a>
+        <a href="img/green_world_3.jpg" title="Orange" data-gallery>
+            <img src="img/thumbnails/green_world_3.jpg" alt="Orange">
+        </a>
+      </div>
     </div>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls"  data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer class="footer">
       <div class="container">
@@ -131,7 +174,14 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.js"></script>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
