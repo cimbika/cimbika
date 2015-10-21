@@ -78,3 +78,8 @@ li {
   overflow: auto;
   color: #333;
 }
+
+.intro-video {
+    border: 2px solid white;
+    box-shadow: 3px 3px 2px #888888;
+}
