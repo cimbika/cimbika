@@ -54,7 +54,7 @@ body {
 
 .navigation-wrap-dropdown {
   border-radius: 0;
-  background: #cdbfe3;
+  background: #DDDDDD;
   padding: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -63,7 +63,7 @@ body {
 
 .navigation-wrap-dropdown-2 {
   border-radius: 0;
-  background: #5cb85c;
+  background: grey;
   padding: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
