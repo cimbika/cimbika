@@ -41,7 +41,15 @@ body {
   margin-top: 30px;
   margin-bottom: 0px;
   border-radius: 0;
-  background: black;
+  /* background: black; */
+}
+
+.container-fluid {
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+
 }
 
 .container .text-muted {
@@ -54,7 +62,7 @@ body {
 
 .navigation-wrap-dropdown {
   border-radius: 0;
-  background: #DDDDDD;
+  /* background: #DDDDDD; */
   padding: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
