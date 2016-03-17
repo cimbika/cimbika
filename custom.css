@@ -37,13 +37,6 @@ body {
   margin: 0 auto;
 }
 
-.navigation-wrap {
-  margin-top: 30px;
-  margin-bottom: 0px;
-  border-radius: 0;
-  /* background: black; */
-}
-
 .container-fluid {
   background: #466368;
   background: -webkit-linear-gradient(#648880, #293f50);
